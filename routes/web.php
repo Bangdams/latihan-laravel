@@ -1,11 +1,11 @@
 <?php
 
-use App\Models\Post;
 use App\Models\Category;
-use App\Models\User; 
 use App\Http\Controllers\PostControllers;
 use App\Http\Controllers\LoginControllers;
 use App\Http\Controllers\DaftarControlers;
+use App\Http\Controllers\DashbordController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -86,6 +86,9 @@ Route::get('/user/{user:username}', function (User $user)
 });
 
 Route::get('/login', [LoginControllers::class, 'index']);
+Route::post('/login', [LoginControllers::class, 'store']);
 
 Route::get('/daftar', [DaftarControlers::class, 'index']);
 Route::post('/daftar', [DaftarControlers::class, 'store']);
+
+Route::get('/dashbord', [DashbordController::class, 'index']);

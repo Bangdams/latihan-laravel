@@ -27,5 +27,7 @@ class DaftarControlers extends Controller
 		$validateData['password'] = bcrypt($validateData['password']);
 
 		User::create($validateData);
+
+		return redirect()->intended('/login')->with('berhasil' , 'Akun Anda Berhasil Terdaftar');
 	}
 }
