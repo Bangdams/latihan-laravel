@@ -37,7 +37,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>Sleek Admin</title>
+    <title>{{ $title }}</title>
   </head>
   <body>
     <!--Page loader-->
@@ -58,7 +58,7 @@
             <!--Logo-->
             <div class="col-sm-3 pl-0 text-center header-logo">
                <div class="bg-theme mr-3 pt-3 pb-2 mb-0">
-                    <h3 class="logo"><a href="#" class="text-secondary logo"><i class="fa fa-rocket"></i> Sleek<span class="small">admin</span></a></h3>
+                    <h3 class="logo"><a href="#" class="text-secondary logo"><i class="fa fa-rocket"></i> Blog<span class="small">admin</span></a></h3>
                </div>
             </div>
             <!--Logo-->
@@ -94,7 +94,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><i class="fa fa-book pr-2"></i> Projects</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fa fa-power-off pr-2"></i> Logout</a>
+                                <a class="dropdown-item" href="/"><i class="fa fa-power-off pr-2"></i> Logout</a>
                             </div>
                         </div>
                     </div>
@@ -114,8 +114,8 @@
                     <!--Image Avatar-->
                     <div class="avatar text-center">
                         <img src="template-admin/img/client-img4.png" alt="" class="rounded-circle" />
-                        <p><strong>Jonathan Clarke</strong></p>
-                        <span class="text-primary small"><strong>UI/UX Designer</strong></span>
+                        <p><strong>Admin</strong></p>
+                        <span class="text-primary small"><strong>Level Admin</strong></span>
                     </div>
                     <!--Image Avatar-->
 
@@ -148,10 +148,8 @@
 
                 <!--Footer-->
                 <div class="row mt-5 mb-4 footer">
-                    <div class="col-sm-8">
-                        <span>&copy; All rights reserved 2019 designed by <a class="text-theme" href="#">A-Fusion</a></span>
-                    </div>
-                    <div class="col-sm-4 text-right">
+                    
+                    <div class="col-sm-15 text-right">
                         <a href="#" class="ml-2">Contact Us</a>
                         <a href="#" class="ml-2">Support</a>
                     </div>
